@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Fake-Tweet-Genarator-With-NFT/static/css/main.6fd0c6b3.chunk.css",
+    "main.js": "/Fake-Tweet-Genarator-With-NFT/static/js/main.05c14f4c.chunk.js",
+    "main.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/main.05c14f4c.chunk.js.map",
+    "runtime-main.js": "/Fake-Tweet-Genarator-With-NFT/static/js/runtime-main.482e6ea3.js",
+    "runtime-main.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/runtime-main.482e6ea3.js.map",
+    "static/js/2.2a7027c4.chunk.js": "/Fake-Tweet-Genarator-With-NFT/static/js/2.2a7027c4.chunk.js",
+    "static/js/2.2a7027c4.chunk.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/2.2a7027c4.chunk.js.map",
+    "static/js/3.0561ebbc.chunk.js": "/Fake-Tweet-Genarator-With-NFT/static/js/3.0561ebbc.chunk.js",
+    "static/js/3.0561ebbc.chunk.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/3.0561ebbc.chunk.js.map",
+    "index.html": "/Fake-Tweet-Genarator-With-NFT/index.html",
+    "static/css/main.6fd0c6b3.chunk.css.map": "/Fake-Tweet-Genarator-With-NFT/static/css/main.6fd0c6b3.chunk.css.map",
+    "static/js/2.2a7027c4.chunk.js.LICENSE.txt": "/Fake-Tweet-Genarator-With-NFT/static/js/2.2a7027c4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.482e6ea3.js",
+    "static/js/2.2a7027c4.chunk.js",
+    "static/css/main.6fd0c6b3.chunk.css",
+    "static/js/main.05c14f4c.chunk.js"
+  ]
+}
