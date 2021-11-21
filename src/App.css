@@ -1,38 +1,276 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fakeTweet {
+  width: 75%;
+  margin-left: auto;
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.tweetBox {
+  width: 635px;
+  max-width: 635px;
+   padding: 18px;
+  border: 1px solid #dddd;
+  border-radius: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Tweet Head */
+.tweetHead {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tweetUserName i {
+  color: #00aced;
+}
+
+.tweetUserProfile {
+  display: flex;
+  align-items: center;
+}
+.tweetUserProfile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.tweetUserNameBox {
+  margin-left: 12px;
+}
+
+.tweetUserName {
+  font-weight: 700;
+}
+.tweetUserNickName {
+  opacity: 0.5;
+}
+.tweetLogo img {
+  width: 28px;
+  height: 23px;
+}
+
+/*  Tweet Body */
+
+.tweetBody {
+  border-bottom: 1px solid #dddd;
+  padding-bottom: 12px;
+}
+
+.tweetText p {
+  font-size: 18.51px;
+  margin: 12px auto 6px auto;
+}
+
+.tweetDateInformation {
+  display: flex;
+  opacity: 0.5;
+}
+
+.tweetDate {
+  position: relative;
+  margin-left: 12px;
+}
+.tweetDate:before {
+  content: ".";
+  position: absolute;
+  top: calc(100% - 25px);
+  left: -8px;
+}
+
+/* Tweet Footer */
+.tweetFooter {
+  margin-top: 12px;
+  opacity: 0.5;
+  display: flex;
+}
+.tweetComment {
+  margin-left: 24px;
+}
+
+/* Tweet Buy Box */
+.tweetBuyBox {
+  width: 635px;
+  max-width: 635px;
+}
+
+.tweetBuyBoxHeader h2 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.tweetBuyBoxHeader p {
+  margin-top: 4px;
+  color: #bdbdbd;
+}
+
+.mention {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.tweetBuyBoxContent input:first-child {
+ 
+  background-color: #dddd;
+  color: #000;
+  border: none;
+  padding: 16px;
+  font-weight: 700;
+  outline: none;
+  width: 75%;
+  border-radius: 8px;
+
+}
+
+.tweetBuyBoxContent input:last-child {
+  margin-left: 12px;
+  background-color: #dddd;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 20%;
+}
+
+.offerList {
+  padding-left: 0;
+  max-height: 330px;
+  overflow-y: scroll;
+  counter-reset: my-sec-counter;
+}
+
+.offerList::-webkit-scrollbar {
+  display: none;
+}
+
+.offerList li {
+  padding: 12px;
+  margin-bottom: 8px;
+  list-style: none;
+  background-color: #e2e2e2;
+  border-radius: 8px;
+}
+.offerList li:before {
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter) ". ";
+}
+.offerList li:first-child {
+  background-color: #00aced;
+  color: #fff;
+}
+.offerList li:first-child .mention{
+  color: #fff;
+}
+
+.offerList li:nth-child(2) {
+  background-color: #6ed7ff;
+  color: #fff;
+}
+.offerList li:nth-child(2) .mention{
+  color: #fff;
+}
+
+.offerList li:nth-child(3) {
+  background-color: #92e1ff;
+  color: #fff;
+}
+.offerList li:nth-child(3) .mention{
+  color: #fff;
+}
+
+.offerList .mention {
+  padding-right: 12px;
+}
+
+
+
+/* fakeTweetGenerator */
+
+.fakeTweetGenerator {
+  width: 25%;
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fakeTweetGeneratorOptions {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.fakeTweetGeneratorOptions h4 {
+  margin: 0;
+  margin-bottom: 8px;
+}
+.fakeTweetGeneratorOptions input {
+  width: 80%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+  .fakeTweet {
+    justify-content: start;
+    align-items: center;
+    padding-top: 48px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  .fakeTweet{
+    width: 100%;
+  }
+  .fakeTweetGenerator {
+    width: 100%;
+  }
+
+
+  .tweetBox {
+    width: 80%;
+  }
+  .tweetBuyBoxContent input{
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 12px;
+  }
+  .tweetLogo img {
+    width: 23px;
+    height: 18px;
+  }
+}
+@media only screen and (max-width: 578px) {
+  .tweetBuyBox {
+    width: fit-content;
   }
 }

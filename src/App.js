@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FakeTweetGenerator from "./components/FakeTweetGenerator";
+import TweetBox from "./components/TweetBox";
+import TweetBuyBox from "./components/TweetBuyBox";
+import { PostProvider } from "./context/PostContext";
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <PostProvider>
+          <FakeTweetGenerator />
+          <div className="fakeTweet">
+            <TweetBox />
+            <TweetBuyBox />
+          </div>
+          </PostProvider>
+      </div>
+    </>
   );
 }
 
