@@ -1,36 +1,42 @@
-import { useEffect, useState } from "react/cjs/react.development";
+import TweetBuyBox from "./TweetBuyBox";
+import { usePostContext } from "../context/PostContext";
+import { useState } from "react/cjs/react.development";
 
-function TweetOffers({ offer }) {
-  const offers = [
-    { user: "@denise", offer: 320000 },
-    { user: "@stacia", offer: 360000 },
+function TweetOffers() {
+  const { data } = usePostContext();
+
+  const [offers, setOffers] = useState([
+    { user: "@john", offer: 500000 },
+    { user: "@cybill", offer: 480000 },
     { user: "@kipling", offer: 450000 },
     { user: "@evaline", offer: 420000 },
-    { user: "@frankie", offer: 390000 },
-    { user: "@mindy", offer: 260000 },
     { user: "@kimmy", offer: 400000 },
-    { user: "@cybill", offer: 480000 },
-    { user: "@john", offer: 500000 },
-  ].sort((first, second) => second.offer - first.offer);
+    { user: "@frankie", offer: 390000 },
+    { user: "@stacia", offer: 360000 },
+    { user: "@denise", offer: 320000 },
+    { user: "@mindy", offer: 260000 },
+  ]);
 
-  const [offersList, setOffersList] = useState(offers);
-
-  useEffect(() => {
-    setOffersList(
-      [offer, ...offers].sort((first, second) => second.offer - first.offer)
+  const newOfferHandler = () => {
+    const newOffer = parseInt(document.querySelector('[name="numberBox"]').value);
+    setOffers((offers) =>
+      [...offers, { user: data.name, offer: newOffer }].sort((first, second) => second.offer - first.offer)
     );
-  }, [offer]);
+  };
+
   return (
-    <div className="tweetBuyBoxHeader">
-      <h2> All Offers </h2>
-      <ul className="offerList">
-     
-        {offersList.map((item, key) => (
-          <li key={key}>
-            <span className="mention"> {item.user} </span>${item.offer}
-          </li>
-        ))}
-      </ul>
+    <div>
+      <TweetBuyBox onclick={newOfferHandler} />
+      <div className="tweetBuyBoxHeader">
+        <h2> All Offers </h2>
+        <ul className="offerList">
+          {offers.map((item, key) => (
+            <li key={key}>
+              <span className="mention"> {item.user} </span>${item.offer}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

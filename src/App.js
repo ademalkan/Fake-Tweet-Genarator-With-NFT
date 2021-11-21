@@ -1,7 +1,7 @@
 import "./App.css";
 import FakeTweetGenerator from "./components/FakeTweetGenerator";
 import TweetBox from "./components/TweetBox";
-import TweetBuyBox from "./components/TweetBuyBox";
+import TweetOffers from "./components/TweetOffers";
 import { PostProvider } from "./context/PostContext";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
           <FakeTweetGenerator />
           <div className="fakeTweet">
             <TweetBox />
-            <TweetBuyBox />
+            <TweetOffers />
           </div>
           </PostProvider>
       </div>
