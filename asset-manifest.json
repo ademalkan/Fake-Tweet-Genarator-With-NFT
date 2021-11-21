@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Fake-Tweet-Genarator-With-NFT/static/css/main.6fd0c6b3.chunk.css",
-    "main.js": "/Fake-Tweet-Genarator-With-NFT/static/js/main.05c14f4c.chunk.js",
-    "main.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/main.05c14f4c.chunk.js.map",
-    "runtime-main.js": "/Fake-Tweet-Genarator-With-NFT/static/js/runtime-main.482e6ea3.js",
-    "runtime-main.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/runtime-main.482e6ea3.js.map",
-    "static/js/2.2a7027c4.chunk.js": "/Fake-Tweet-Genarator-With-NFT/static/js/2.2a7027c4.chunk.js",
-    "static/js/2.2a7027c4.chunk.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/2.2a7027c4.chunk.js.map",
-    "static/js/3.0561ebbc.chunk.js": "/Fake-Tweet-Genarator-With-NFT/static/js/3.0561ebbc.chunk.js",
-    "static/js/3.0561ebbc.chunk.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/3.0561ebbc.chunk.js.map",
+    "main.js": "/Fake-Tweet-Genarator-With-NFT/static/js/main.79f02c96.chunk.js",
+    "main.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/main.79f02c96.chunk.js.map",
+    "runtime-main.js": "/Fake-Tweet-Genarator-With-NFT/static/js/runtime-main.88990f6c.js",
+    "runtime-main.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/runtime-main.88990f6c.js.map",
+    "static/js/2.8d0e737b.chunk.js": "/Fake-Tweet-Genarator-With-NFT/static/js/2.8d0e737b.chunk.js",
+    "static/js/2.8d0e737b.chunk.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/2.8d0e737b.chunk.js.map",
+    "static/js/3.ddea8f45.chunk.js": "/Fake-Tweet-Genarator-With-NFT/static/js/3.ddea8f45.chunk.js",
+    "static/js/3.ddea8f45.chunk.js.map": "/Fake-Tweet-Genarator-With-NFT/static/js/3.ddea8f45.chunk.js.map",
     "index.html": "/Fake-Tweet-Genarator-With-NFT/index.html",
     "static/css/main.6fd0c6b3.chunk.css.map": "/Fake-Tweet-Genarator-With-NFT/static/css/main.6fd0c6b3.chunk.css.map",
-    "static/js/2.2a7027c4.chunk.js.LICENSE.txt": "/Fake-Tweet-Genarator-With-NFT/static/js/2.2a7027c4.chunk.js.LICENSE.txt"
+    "static/js/2.8d0e737b.chunk.js.LICENSE.txt": "/Fake-Tweet-Genarator-With-NFT/static/js/2.8d0e737b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.482e6ea3.js",
-    "static/js/2.2a7027c4.chunk.js",
+    "static/js/runtime-main.88990f6c.js",
+    "static/js/2.8d0e737b.chunk.js",
     "static/css/main.6fd0c6b3.chunk.css",
-    "static/js/main.05c14f4c.chunk.js"
+    "static/js/main.79f02c96.chunk.js"
   ]
 }
