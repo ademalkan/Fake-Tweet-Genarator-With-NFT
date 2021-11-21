@@ -1,7 +1,9 @@
 import {useState} from "react";
 import TweetOffers from "./TweetOffers";
+import {usePostContext} from "../context/PostContext"
 
 function TweetBuyBox() {
+  const {data} = usePostContext()
   const [offer, setOffer] = useState();
   const addOfferHandler = () => {
     const offerValue = document.querySelector('[name="numberBox"]').value;
@@ -18,7 +20,7 @@ function TweetBuyBox() {
         <input type="button" value="OFFER" onClick={addOfferHandler} />
       </div>
 
-      <TweetOffers offer={offer} />
+      <TweetOffers offer={{user: data.name, offer: offer}} />
     </div>
   );
 }

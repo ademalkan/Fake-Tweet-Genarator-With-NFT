@@ -11,23 +11,23 @@ function TweetOffers({ offer }) {
     { user: "@kimmy", offer: 400000 },
     { user: "@cybill", offer: 480000 },
     { user: "@john", offer: 500000 },
-  ];
-
-  const [offersList, setOffersList] = useState(offers.sort(
+  ].sort(
     (first, second) => second.offer - first.offer
-  ));
+  );
+
+  const [offersList, setOffersList] = useState(offers);
 
   useEffect(() => {
-    offer > 0
+    offer.offer > 0
       ? setOffersList(
-          [{ user: "you", offer: offer }, ...offers].sort(
+          [offer, ...offers].sort(
             (first, second) => second.offer - first.offer
           )
         )
       : setOffersList(offersList.sort(
         (first, second) => second.offer - first.offer
       ));
-  }, [offersList]);
+  }, [offer, offers, offersList]);
   return (
     <div className="tweetBuyBoxHeader">
       <h2>All Offers</h2>
