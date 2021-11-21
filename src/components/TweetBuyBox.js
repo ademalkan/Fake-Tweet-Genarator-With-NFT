@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function TweetBuyBox({onclick}) {
+function TweetBuyBox() {
   const [offer, setOffer] = useState();
   return (
     <div className="tweetBuyBox ">
@@ -10,7 +10,7 @@ function TweetBuyBox({onclick}) {
       </div>
       <div className="tweetBuyBoxContent">
         <input name="numberBox" type="number" onChange={e => setOffer(e.target.value)} />
-        <input type="button" value="OFFER" onClick={onclick} />
+        <input type="button" value="OFFER" />
       </div>
     </div>
   );
