@@ -11,31 +11,23 @@ function TweetOffers({ offer }) {
     { user: "@kimmy", offer: 400000 },
     { user: "@cybill", offer: 480000 },
     { user: "@john", offer: 500000 },
-  ].sort(
-    (first, second) => second.offer - first.offer
-  );
+  ].sort((first, second) => second.offer - first.offer);
 
   const [offersList, setOffersList] = useState(offers);
 
   useEffect(() => {
-    offer.offer > 0
-      ? setOffersList(
-          [offer, ...offers].sort(
-            (first, second) => second.offer - first.offer
-          )
-        )
-      : setOffersList(offersList.sort(
-        (first, second) => second.offer - first.offer
-      ));
-  }, [offer, offers, offersList]);
+    setOffersList(
+      [offer, ...offers].sort((first, second) => second.offer - first.offer)
+    );
+  }, [offer]);
   return (
     <div className="tweetBuyBoxHeader">
-      <h2>All Offers</h2>
+      <h2> All Offers </h2>
       <ul className="offerList">
+     
         {offersList.map((item, key) => (
           <li key={key}>
-            <span className="mention">{item.user}</span>
-            ${item.offer}
+            <span className="mention"> {item.user} </span>${item.offer}
           </li>
         ))}
       </ul>

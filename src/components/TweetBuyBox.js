@@ -6,8 +6,7 @@ function TweetBuyBox() {
   const {data} = usePostContext()
   const [offer, setOffer] = useState();
   const addOfferHandler = () => {
-    const offerValue = document.querySelector('[name="numberBox"]').value;
-    setOffer(offerValue);
+    setOffer(document.querySelector('[name="numberBox"]').value);
   };
   return (
     <div className="tweetBuyBox ">
